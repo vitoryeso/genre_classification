@@ -8,7 +8,7 @@ entry_points:
         description: Fully qualified name for the artifact
         type: str
       artifact_root:
-        description: Name for the W&B artifact that will be created
+        description: Name for the W&B artifact that will be created. Like a prefix
         type: str
       artifact_type:
         description: Type of the artifact to create

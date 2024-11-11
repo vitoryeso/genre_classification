@@ -30,6 +30,7 @@ def go(args):
     df['title'].fillna(value='', inplace=True)
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
+    df["loudness"].fillna(value=df["loudness"].mean(), inplace=True)
 
     filename = "processed_data.csv"
     df.to_csv(filename)
